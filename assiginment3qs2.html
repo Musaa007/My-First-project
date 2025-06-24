@@ -1,0 +1,41 @@
+!DOCTYPE html>
+<html>
+<head>
+  <title>Check if user can vote</title>
+</head>
+<body>
+
+  <h2>Check if user is able to vote</h2>
+
+ 
+  <button onclick="checkNumber()">Click to enter age </button>
+
+  <script>
+    
+    function checkNumber() {
+      
+      var input = prompt("Enter your age:");
+
+      
+      var number = Number(input);
+
+      
+      if (isNaN(number)) {
+        alert("That's not a valid number.");
+      }
+    
+      else if (number > 18) {
+        alert("The user can vote.");
+      }
+      
+      else if (number < 18) {
+        alert("The user can not vote.");
+      }
+    
+     
+      }
+    
+  </script>
+
+</body>
+</html>

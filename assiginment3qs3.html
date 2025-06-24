@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Check</title>
+</head>
+<body>
+
+  <button onclick="checkPassword()">Enter Password</button>
+
+  <script>
+    function checkPassword() {
+      var password1 = prompt("enter password:");
+      var password2 = prompt("enter again:");
+
+      if (password1 === password2) {
+        alert("Correct");
+      } else {
+        alert("Incorrect");
+      }
+    }
+  </script>
+
+</body>
+</html>
