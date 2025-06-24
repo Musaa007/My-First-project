@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GRADE DETERMINE</title>
+</head>
+<body>
+
+  <h2> ENTER  YOUR MARKS</h2>
+
+ 
+  <button onclick="checkNumber()">Click to Enter MARKS</button>
+
+  <script>
+    
+    function checkNumber() {
+      
+      var input = prompt("Enter MARKS:");
+
+      
+      var number = Number(input);
+
+      
+      if (isNaN(number)) {
+        alert("That's not a valid number.");
+      }
+    
+      else if (number > 80) {
+        alert(" YOU HAVE ATAINED  A GRADE .");
+      }
+      
+      else if (number < 79) {
+        alert("YOU HAVE ATAINED BAD MARKS.....");
+      }
+    
+      else {
+        alert(" YOU  TRIED  BUT WELP ... ITS UNDER A-");
+      }
+    }
+  </script>
+
+</body>
+</html>

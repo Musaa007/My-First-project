@@ -1,0 +1,24 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Check</title>
+</head>
+<body>
+
+  <button onclick="checkTemperature()">enter temp </button>
+
+  <script>
+    function checkTemperature() {
+      var temp = prompt("enter tempreture:");
+      temp = Number(temp);
+
+      if (temp > 35) {
+        alert("dang its hot today");
+      } else {
+        alert("its cool today enjoy it it wont last long,welcome to karachi bud ");
+      }
+    }
+  </script>
+
+</body>
+</html>
